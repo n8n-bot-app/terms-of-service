@@ -1,0 +1,156 @@
+/* ==== GENERAL STYLES ==== */
+body {
+  margin: 0;
+  font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #2c2f33;
+  color: #dcddde;
+}
+
+.scroll-box {
+    width: 90%;             /* width of the box */
+    height: 520px;            /* height of the box */
+    border: 2px solid #333;   /* border to make it visible */
+    padding: 10px;            /* inner spacing */
+    overflow-y: scroll;       /* vertical scrollbar only */
+    overflow-x: hidden;       /* hide horizontal scrollbar */
+    background-color: none;
+  }
+
+a {
+  color: #5865f2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ==== HEADER ==== */
+header {
+  background-color: #23272a;
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  position: sticky;
+  border-bottom: 1px solid #1e2124;
+}
+
+header img.logo {
+  height: 40px;
+  margin-right: 2%;
+}
+
+img.logo-2 {
+  height: 40px;
+  margin-left: 25%;
+}
+header h1 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* ==== BANNER ==== */
+.banner {
+  background: url("https://cdn.discordapp.com/attachments/1101789931332159518/1101790049303242792/discord_banner.png") center/cover no-repeat;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner h2 {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 12px 24px;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.8rem;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.banner h2.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ==== CONTENT ==== */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  background-color: #36393f;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+h3 {
+  color: #ffffff;
+  margin-top: 25px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/* ==== FOOTER ==== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #23272a;
+  color: #99aab5;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 450px) {
+  
+  .scroll-box {
+    width: 90%;             /* width of the box */
+    height: 336px;            /* height of the box */
+    border: 2px solid #333;   /* border to make it visible */
+    padding: 10px;            /* inner spacing */
+    overflow-y: scroll;       /* vertical scrollbar only */
+    overflow-x: hidden;       /* hide horizontal scrollbar */
+    background-color: none;
+  }
+  
+  header h1 {
+  font-size: 1rem;
+  color: #ffffff;
+  margin: 0;
+}
+  
+main p {
+  font-size: 0.7rem;
+}
+  
+  h3 {
+    font-size: 1rem;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
